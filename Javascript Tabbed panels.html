@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript tabbed Panels</title>
+	<style >
+		body{
+			font-family: Arial,helvetica,sans-serif;
+			color: #222;
+		}
+		.tab-bar{
+			list-style: none;
+			margin:0;
+			padding: 10px 10px 0 10px;
+			background:#c22;
+			overflow: hidden;
+		}
+		.tab-bar li{
+			padding: 8px 20px;
+			float: left;
+			margin-right: 8px;
+			background:#fff;
+			cursor: pointer;
+		}
+		.panel{
+			min-height: 200px;
+			border:1px solid #c22;
+			border-top: 0 none;
+			padding: 15px;
+		}
+		#tab-2{
+			background:#e55;
+		}
+		#panel-2{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul class="tab-bar">
+		<li id="tab-1" onClick="switchOne()">Tab One</li>
+		<li id="tab-2" onClick="switchTwo()">Tab Two</li>
+	</ul>
+		<div class="panel" id="panel-1">Panel One</div>
+		<div class="panel" id="panel-2">Panel Two</div>
+
+	
+	<script>
+		function get(obj){
+			return document.getElementById(obj);
+		}
+		function switchOne(){
+			get("tab-1").style.background="#fff";
+			get("tab-2").style.background="#e55";
+			get("panel-1").style.display="block";
+			get("panel-2").style.display="none";
+		}
+			function switchTwo(){
+			get("tab-1").style.background="#e55";
+			get("tab-2").style.background="#fff";
+			get("panel-1").style.display="none";
+			get("panel-2").style.display="block";
+		}
+	</script>
+
+</body>
+</html>

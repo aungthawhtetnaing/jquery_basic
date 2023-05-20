@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <style>
+		.one{
+			color: yellow;
+		}
+	</style> -->
+for warp
+	<style>
+		p{
+			background: yellow;
+		}
+		div{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- jquery with Html -->
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').html('<i>New</i>');
+		});
+	</script> -->
+
+
+	<!-- <h1>Heading</h1>
+	<button id="one">Click</button>
+	<button>Click</button>
+	
+	<script>
+		$('#one').click(function(){
+			$('h1').html('<i>New</i>');
+		});
+	</script> -->
+
+<!-- jquery with Css -->
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').css('color','yellow');
+		});
+	</script> -->
+
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').css({'color':'yellow','background':'blue'});//call json
+		});
+	</script>
+ -->
+
+<!-- jquery with Html&Css -->
+ <!-- 	<h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').html('<i>New</i>').css({'color':'yellow','background':'blue'});//call json
+		});
+	</script> -->
+
+
+	<!-- jquery Events -->
+		<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').hide(3000);//call json
+		});
+	</script> -->
+
+	<!-- <h1 >Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').fadeOut(3000);//call json
+		});
+	</script>
+ -->
+
+ 	<!-- <h1 style="display: none;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').fadeIn(3000);//call json
+		});
+	</script>
+ -->
+ <!-- <h1 style="display: none;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').show(3000);//call json
+		});
+	</script> -->
+
+	<!-- <h1 style="display: none;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').toggle();//call json
+		});
+	</script> -->
+
+ 	<!-- <h1 style="display: none;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').slideToggle();//call json
+		});
+	</script> -->
+
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').text('<i>New</i>')
+		});
+	</script> -->
+
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').append('<i>New</i>')
+		});
+	</script> -->
+
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').prepend('<i>New</i>')
+		});
+	</script> -->
+
+	<!-- <h1 style="background: yellow;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			var h=$('h1').height();
+			alert(h);
+		});
+	</script> -->
+
+	<!-- <h1 style="background: yellow;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			var h=$('h1').width();//get
+			alert(h);
+		});
+	</script>
+ -->
+
+ 	<!-- <h1 style="background: yellow;">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').height(200).width(200);//assign
+		});
+	</script> -->
+
+
+	<!-- <h1>Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').addClass('one'); // useful in project
+		});
+	</script> -->
+
+
+	<!-- <h1 class="one">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').removeClass('one'); // useful in project
+		});
+	</script> -->
+
+	<!-- <h1 class="one">Heading</h1>
+	<button>Click</button>
+	<script>
+		$('button').click(function(){
+			$('h1').toggleClass('one'); // useful in project
+		});
+	</script> -->
+
+	<!-- <a href="" title="HTMl">Programming</a>
+	<button>Click</button>
+
+	<script>
+		$('button').click(function(){
+			var b=$('a').attr('title'); //get attribute value
+			alert(b);
+		});
+	</script> -->
+
+	<!-- <a href="" title="HTMl">Programming</a>
+	<button>Click</button>
+
+	<script>
+		$('button').click(function(){
+			$('a').attr('title','JAVASCRIPT');//assign attribute
+		});
+	</script> -->
+
+
+	<!-- <div>
+		<a href="" title="HTMl">Programming</a>
+	</div>
+	<button>Click</button>
+
+	<script>
+		$('button').click(function(){
+			$('a').parent().css('background','pink');
+		});
+	</script> -->
+
+	<!-- <input type="" name="">
+	<button>Click</button>
+
+	<script>
+		$('button').click(function(){
+			var a=$('input').val();//get
+			alert(a);
+		});
+	</script> -->
+
+
+	<!-- <input type="" name="">
+	<button>Click</button>
+
+	<script>
+		$('button').click(function(){
+			$('input').val("hello");//assign
+			
+		});
+	</script> -->
+
+	<!-- <input type="" name="">
+	
+
+	events
+
+	<script>
+		$('input').focus(function(){
+			$('input').css('border','3px solid red');//assign
+			
+		});
+	</script> -->
+
+
+	<!-- <input type="" name="">
+	
+
+	<script>
+		$('input').blur(function(){
+			$('input').css('border','3px solid red');//assign
+			
+		});
+	</script>
+ -->
+
+<!-- <div><p></p></div> ----wrap--
+ 		<p><div></div></p>----------wrapInner -->
+ 	<!-- <p>Paragraph</p>
+ 	<button>Click</button>
+ 	<script>
+ 		$('button').click(function(){
+ 			$('p').wrapInner('<div></div>');
+ 		});
+ 	</script> -->
+
+
+	<!-- <p>Paragraph</p>
+ 	<button>Click</button>
+ 	<script>
+ 		$('button').click(function(){
+ 			$('<i>New</i>').appendTo('p');
+ 		});
+ 	</script> -->
+
+ 	<!-- <p>Paragraph</p>
+ 	<button>Click</button>
+ 	<script>
+ 		$('button').click(function(){
+ 			$('p').clone().appendTo('body');
+ 		});
+ 	</script> -->
+
+ <!-- 	<p>Paragraph</p>
+ 	<button class="assign">assign</button>
+ 	<button class="get">Get</button>
+ 	<script>
+ 		$('.assign').click(function(){
+ 			$('p').data('greeting','hello');
+ 		});
+ 		$('.get').click(function(){
+ 			var a=$('p').data('greeting');
+ 			alert(a);
+ 		});
+ 	</script>
+ -->
+
+
+ <!-- 	<div><p>Paragraph</p></div>
+ 	<button>click</button>
+ 	<script>
+ 		$('button').click(function(){
+ 			if ($('p').parent().is('div')) {
+ 				alert('true');
+ 			}else {
+ 				alert('false');
+ 			}
+ 		});
+ 		
+ 	</script> -->
+
+</body>
+</html>

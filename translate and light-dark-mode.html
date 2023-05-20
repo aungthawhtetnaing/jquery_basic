@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.darkmode{
+			background: black;
+			color: white;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<button class="mbtn">Myanmar</button>
+	<button class="ebtn">English</button>
+
+
+	<p  class="english">How are you.</p>
+	<p class="myanmar" style="display: none;">နေ‌ေကာင်းလား</p>
+	<script>
+		$('.mbtn').click(function(){
+			$('.myanmar').show();
+			$('.english').hide();
+		});
+		$('.ebtn').click(function(){
+			$('.myanmar').hide();
+			$('.english').show();
+		});
+	</script>
+
+	<button class="light"style="display: none" >Light mode</button>
+	<button class="dark" >Dark mode</button>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt modi dolore fuga error aliquam quis? Cum fugiat soluta, inventore corporis eveniet voluptatem dicta vitae minus quas. Libero asperiores, ipsa autem.</p>
+	<script>
+		$('.light').click(function(){
+			$('body').toggleClass('darkmode');
+			$('.light').hide();
+			$('.dark').show();
+			
+		});
+		$('.dark').click(function(){
+			
+			$('body').toggleClass('darkmode');
+			$('.dark').hide();
+			$('.light').show();
+		});
+	</script>
+</body>
+</html>

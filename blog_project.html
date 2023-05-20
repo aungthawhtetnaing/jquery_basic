@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		body,button,input,textarea{
+			font-family: arial;
+		}
+		.blog_form{
+			width: 50%;
+			
+			margin:  auto;
+			padding: 10px 15px;
+			box-shadow: 3px 3px 10px #999,-3px  -3px 10px #999;
+			display: none;
+			margin-bottom: 20px;
+		}
+		.blog_form h1{
+			text-align: center;
+		}
+		.blog_form input{
+			width: 99%;
+			height: 25px;
+			margin-bottom: 10px;
+
+		}
+		.blog_form textarea{
+			width: 99%;
+			margin-bottom: 10px;
+		}
+		 button{
+		 	background: #333;
+		 	color: #fff;
+		 	font-size: 14px;
+		 	padding: 5px 15px;
+		 	border: 3px solid #777;
+		 	border-radius: 20px;
+		}
+
+		.start{
+			top: 20px;
+			left: 20;
+			position: absolute;
+		}
+		.blog{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.blog div{
+			width: 25%;
+			margin: 10px;
+			box-shadow: 3px 3px 10px #ddd,-3px  -3px 10px #ddd;
+			padding: 10px;
+
+
+		}
+		.blog h3{
+			text-align: center;
+		}
+		.blog p{
+			text-align: justify;
+			line-height: 25px;
+			color: #555;
+		}
+		.blog b{
+			float: right;
+			font-size:20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="blog_form">
+		<h1>Blog Form</h1>
+		<input type="" placeholder="Enter tite">
+		<textarea rows="8" placeholder="Enter Description"></textarea>
+		<button class="create">Create</button>
+	</div>
+	<button class="start">Start</button>
+
+	<div class="blog">
+
+	</div>
+	<script>
+		$('.start').click(function(){
+			$('.blog_form').slideToggle();
+		});
+
+
+		$('.create').click(function(){
+				var title=$('input').val();
+				var description=$('textarea').val();
+
+			$('.blog').append('<div><b>&times;</b><h3>'+title+'</h3><p>'+description+'</p></div>');
+			$('input,textarea').val("");
+
+			$('b').click(function(){
+				$(this).parent().hide();
+			});
+		});
+	</script>
+
+</body>
+</html>
